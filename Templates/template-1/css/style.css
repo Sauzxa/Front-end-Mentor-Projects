@@ -5,6 +5,7 @@
     --section-padding: 60px;
     --section-background: #f6f6f6;
     --main-duration: 0.5s;
+    --specialHeading-color:#ebeced;
   }
   /* End Variables */
 
@@ -45,7 +46,33 @@
       width: 1170px;
     }
   }
+  @media (max-width : 767px){
+             .special-heading{
+              font-size: 60px;
+             }
+             .special-heading + p{
+                margin-top: -20px;
+             }
+  }
   /* End Global Rules */
+  /*start special heading */
+  .special-heading{
+      font-size: 100px;
+      color:var(--specialHeading-color); 
+      text-align: center;
+      letter-spacing: -3px;
+      margin: 0;
+      font-weight: 800;
+
+  }
+  .special-heading + p{
+     margin:-30px 0 0; /* top right bottonm left */
+     font-size: 20px;
+     text-align: center;
+    }
+  
+  
+  /*end special heading */
   /* start header*/
   .header{
     padding: 20px;
@@ -180,6 +207,10 @@
      padding: 20px;
      text-align: center;
     }  
+    .features .feat i {
+      color: var(--main-color);
+      font-size: 28px;
+    }
     .features .container .feat h3{
        font-weight: 800; /*extra bold*/
     }
@@ -189,6 +220,29 @@
         color: #777;
     }
 /* end features */
+/* start services  */
+    .services{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .services .services-content{
+      display: grid;
+      grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+      gap: 30px;
+      margin-top: 100px;
+    }
+    .services .services-content .srv{
+      display: flex;
+      margin-bottom: 40px;
+    }  
+    @media (max-width : 767px){
+      .services .services-content .srv {
+        flex-direction: column; /* inside the srv box on mobile device */
+        text-align: center;
+      }
+    }  
+    
+/* end services  */
 
 
 
