@@ -241,7 +241,45 @@
         text-align: center;
       }
     }  
-    
+    .services .services-content .srv i {
+      flex-basis: 60px;
+      color: var(--main-color);
+    }
+    .services .services-content .srv  .text{
+      flex : 1;
+    }
+    .services .services-content .srv h3{
+       margin: 0 0 20px;
+    }
+    .services .services-content .srv  p{
+           color: #444;
+           font-weight: 800;
+           line-height:1.6 ;
+    }
+    .services .services-content  .image{
+      text-align: center;
+      position: relative;
+    }
+    .services .services-content  .image img{
+      width: 260px;
+    }
+    .services .services-content  .image::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -50px;
+        width: 90px;
+        height: calc(100% + 100px) ;
+        background-color: var(--secondary-color);
+        z-index: -1;
+    }
+@media (max-width:1199px){
+    .image-column{
+      display: none;
+    }
+}
+
+
 /* end services  */
 
 
